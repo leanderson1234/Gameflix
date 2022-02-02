@@ -1,0 +1,92 @@
+:root{
+  --black:#020202;
+  --blue:#4242c0;
+  --text-color:#f1f1f1;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: var(--black);
+  color: var(--text-color);
+  
+  font-family: Roboto, "Helvetica Neue",serif;
+}
+header .container{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-right: 24px;
+}
+
+header .container nav a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+}
+header .container nav a:hover{
+  color:var(--blue);
+}
+
+header .logo{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color:var(--blue);
+  margin:8px;
+}
+/* Game princial */
+main .game-main{
+  background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa_principal.jpg');
+  background-size: cover;
+  height: 480px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+main .container{
+  width: 64%;
+  margin-left: 16px;
+}
+main .game-main .container .title{
+  font-size: 32px;
+  margin-bottom: 8px;
+  color:var(--blue);
+}
+main .game-main .container .description{
+  font-size: 16px;
+}
+main .container button{
+  background-color: var(--blue);
+  color: var(--text-color);
+  margin-top: 24px;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main .container button:hover{
+  background-color: var(--text-color);
+  color: var(--blue);
+  transition:.5s ease;
+}
+
+main .container button i{
+  margin-right: 8px;
+}
+/* games populares */
+.games_popular{
+  margin-top: 16px;
+}
+.games_popular h3{
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
